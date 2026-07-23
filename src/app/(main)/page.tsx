@@ -9,6 +9,7 @@ import SpacerLarge from "@/_components/spacers/SpacerLarge";
 import ServiceListSection from "@/_components/sections/ServiceListSection";
 import NewsSection from "@/_components/sections/NewsSection";
 import Header from "@/_components/headers/Header";
+import { ImagesData } from "@/_data/sample/ImagesData";
 
 
 
@@ -46,7 +47,7 @@ export default async function Page() {
 
   return (
     <>
-      <Header />
+      <Header image={ImagesData.banner[0]} />
       <SpacerLarge />
       <IntroDualSection
         title={AppInfoData.aboutInfo[0].title}
@@ -55,6 +56,7 @@ export default async function Page() {
         href={AppInfoData.aboutInfo[0].href}
         btnName={AppInfoData.aboutInfo[0].btnName}
         dir='left'
+        image={AppInfoData.aboutInfo[0].image}
       />
 
       <SpacerLarge />
@@ -65,17 +67,9 @@ export default async function Page() {
         href={ServiceData.intro.href}
         btnName={ServiceData.intro.btnName}
         dir='right'
+        image={ServiceData.intro.image}
       />
 
-      <SpacerLarge />
-      <IntroDualSection
-        title={ServiceData.intro.title}
-        subtitle={ServiceData.intro.subtitle}
-        details={ServiceData.intro.details}
-        href={ServiceData.intro.href}
-        btnName={ServiceData.intro.btnName}
-        dir='left'
-      />
 
       <SpacerLarge />
 

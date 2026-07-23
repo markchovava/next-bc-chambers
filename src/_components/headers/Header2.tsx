@@ -14,6 +14,7 @@ import { AppInfoData } from "@/_data/sample/AppinfoData"
 
 interface Props {
     name: string
+    image: string
 }
 
 // Fixed TypeScript type definition for motion transition
@@ -23,12 +24,13 @@ const smoothTransition = (delay: number): Transition => ({
     ease: [0.25, 1, 0.5, 1] as const,
 })
 
-export default function Header2({ name }: Props) {
+export default function Header2({ name, image }: Props) {
     return (
         <>
             <header className="w-full h-100 relative text-gray-50">
                 {/* IMAGE / COLOR */}
-                <section className="absolute z-10 top-0 left-0 w-full h-full bg-sky-600">
+                <section style={{ backgroundImage: `url(${image})` }} className="absolute bg-center bg-cover lg:bg-fixed z-10 top-0 left-0 w-full h-full bg-sky-600">
+                    {/*  <Image src={image} width={1280} height={720} alt="Banner" className="w-full h-full object-cover" /> */}
                 </section>
                 {/* BG GRADIENT SHADOW */}
                 <section className="absolute z-20 top-0 left-0 w-full h-full bg-linear-to-bl from-black/90 to-transparent">

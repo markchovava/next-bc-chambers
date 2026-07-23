@@ -1,19 +1,23 @@
+import { ImagesData } from "./ImagesData";
+
 export const ServiceData = {
     intro: {
         subtitle: 'Our Expertise',
         title: 'We are here to help you.',
         details: <>
-            At Gill, Godlonton & Gerrans we apply our vast experience to business
-            needs providing results focused legal expertise. We pratice in over 12
-            diverse areas of law. GGG specialises in corporate and commercial matters
+            At B. Chipadza Law Chambers we apply our vast experience to business
+            needs providing results focused legal expertise. We practice in over 12
+            diverse areas of law. B. Chpadza Law Chambers specialises in corporate and commercial matters
             with a highly skilled team of lawyers and associates.
         </>,
         href: '/service',
         btnName: 'Our Expertise',
+        image: ImagesData.other[5],
     },
     list: [
         {
             id: 12,
+            image: ImagesData.other[0],
             name: 'Arbitration',
             iconType: 'Gavel',
             details: (
@@ -27,6 +31,7 @@ export const ServiceData = {
         },
         {
             id: 1,
+            image: ImagesData.other[1],
             name: 'Commercial and Corporate Law',
             iconType: 'Briefcase',
             details: (
@@ -40,6 +45,7 @@ export const ServiceData = {
         },
         {
             id: 2,
+            image: ImagesData.other[2],
             name: 'Conveyancing and Notarial Practice',
             iconType: 'Home',
             details: (
@@ -53,6 +59,7 @@ export const ServiceData = {
         },
         {
             id: 3,
+            image: ImagesData.other[3],
             name: 'Criminal Law',
             iconType: 'Scale',
             details: (
@@ -66,6 +73,7 @@ export const ServiceData = {
         },
         {
             id: 4,
+            image: ImagesData.other[4],
             name: 'Energy and Mining',
             iconType: 'Zap',
             details: (
@@ -79,6 +87,7 @@ export const ServiceData = {
         },
         {
             id: 5,
+            image: ImagesData.other[5],
             name: 'Estate Planning, Wills and Successions',
             iconType: 'FileText',
             details: (
@@ -92,6 +101,7 @@ export const ServiceData = {
         },
         {
             id: 6,
+            image: ImagesData.other[6],
             name: 'General Civil Litigation',
             iconType: 'Shield',
             details: (
@@ -105,6 +115,7 @@ export const ServiceData = {
         },
         {
             id: 7,
+            image: ImagesData.other[7],
             name: 'Insurance Law',
             iconType: 'FileCheck',
             details: (
@@ -118,6 +129,7 @@ export const ServiceData = {
         },
         {
             id: 8,
+            image: ImagesData.other[8],
             name: 'Intellectual Property',
             iconType: 'Lightbulb',
             details: (
@@ -131,6 +143,7 @@ export const ServiceData = {
         },
         {
             id: 9,
+            image: ImagesData.other[4],
             name: 'Labour Law',
             iconType: 'Users',
             details: (
@@ -144,6 +157,7 @@ export const ServiceData = {
         },
         {
             id: 10,
+            image: ImagesData.other[0],
             name: 'Business Rescue and Insolvency',
             iconType: 'TrendingDown',
             details: (
@@ -157,6 +171,7 @@ export const ServiceData = {
         },
         {
             id: 11,
+            image: ImagesData.other[1],
             name: 'Tax Advice and Litigation',
             iconType: 'DollarSign',
             details: (

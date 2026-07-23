@@ -6,12 +6,15 @@ import TitleSmall from "../titles/TitleSmall"
 import Button from "../buttons/Button"
 import { ReactNode } from "react"
 import { motion, Transition } from 'motion/react'
+import Image from "next/image"
+import { NoImageData } from "@/_data/sample/NoImage"
 
 interface Props {
     subtitle: string
     title: string
     details: ReactNode
     href?: string
+    image?: string
     btnName?: string
     dir?: 'left' | 'right'
 }
@@ -26,6 +29,7 @@ export default function IntroDualSection({
     title,
     subtitle,
     details,
+    image = NoImageData,
     href = '#',
     btnName = '',
     dir = 'left'
@@ -47,6 +51,7 @@ export default function IntroDualSection({
                             viewport={{ once: true, margin: "-150px" }}
                             transition={smoothTransition(0)}
                             className="w-full h-full bg-gray-400 overflow-hidden rounded-lg">
+                            <Image src={image} alt='Image' className="w-full h-full object-cover" width={720} height={560} />
                         </motion.div>
                     </div>
 

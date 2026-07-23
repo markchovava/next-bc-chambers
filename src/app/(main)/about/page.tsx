@@ -5,6 +5,7 @@ import ContactSection from '@/_components/sections/ContactSection'
 import IntroDualSection from '@/_components/sections/IntroDualSection'
 import Spacer from '@/_components/spacers/Spacer'
 import { AppInfoData } from '@/_data/sample/AppinfoData'
+import { ImagesData } from '@/_data/sample/ImagesData'
 import { appInfoViewAction } from '@/app/admin/_data/actions/AppInfoActions'
 import { Metadata } from 'next'
 
@@ -48,7 +49,7 @@ export default async function page() {
 
     return (
         <>
-            <Header2 name='About Us' />
+            <Header2 name='About Us' image={ImagesData.header[3]} />
             <BreadCrumb data={CrumbsData} />
 
             <Spacer />
@@ -64,22 +65,25 @@ export default async function page() {
                 subtitle={AppInfoData.aboutInfo[0].subtitle}
                 details={AppInfoData.aboutInfo[0].details}
                 dir='left'
+                image={AppInfoData.aboutInfo[0].image}
             />
 
             <Spacer />
             <IntroDualSection
-                title={AppInfoData.aboutInfo[0].title}
-                subtitle={AppInfoData.aboutInfo[0].subtitle}
-                details={AppInfoData.aboutInfo[0].details}
+                title={AppInfoData.aboutInfo[1].title}
+                subtitle={AppInfoData.aboutInfo[1].subtitle}
+                details={AppInfoData.aboutInfo[1].details}
                 dir='right'
+                image={AppInfoData.aboutInfo[1].image}
             />
 
             <Spacer />
             <IntroDualSection
-                title={AppInfoData.aboutInfo[0].title}
-                subtitle={AppInfoData.aboutInfo[0].subtitle}
-                details={AppInfoData.aboutInfo[0].details}
+                title={AppInfoData.aboutInfo[2].title}
+                subtitle={AppInfoData.aboutInfo[2].subtitle}
+                details={AppInfoData.aboutInfo[2].details}
                 dir='left'
+                image={AppInfoData.aboutInfo[2].image}
             />
 
             <Spacer />

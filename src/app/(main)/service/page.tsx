@@ -3,6 +3,7 @@ import Header2 from '@/_components/headers/Header2'
 import ContactSection from '@/_components/sections/ContactSection'
 import ServiceSection from '@/_components/sections/ServiceSection'
 import Spacer from '@/_components/spacers/Spacer'
+import { ImagesData } from '@/_data/sample/ImagesData'
 import { appInfoViewAction } from '@/app/admin/_data/actions/AppInfoActions'
 import { Metadata } from 'next'
 
@@ -43,7 +44,7 @@ export default async function page() {
 
     return (
         <>
-            <Header2 name='Our Services' />
+            <Header2 name='Our Services' image={ImagesData.header[4]} />
             <BreadCrumb data={CrumbsData} />
 
             <Spacer />

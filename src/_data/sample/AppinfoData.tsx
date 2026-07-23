@@ -1,4 +1,5 @@
 import { ComfortaaSemiBold } from "@/_assets/fonts/comfortaa/ComfortaaFont";
+import { ImagesData } from "./ImagesData";
 
 export const AppInfoData = {
     name: 'Own One',
@@ -21,29 +22,40 @@ export const AppInfoData = {
         subtitle: 'About Us',
         title: 'A Law firm you can trust',
         details: <>
-            The founding partner of the firm, William Erskine Gill,
-            commenced practice in 1912 and the firm became known as
-            Gill, Godlonton & Gerrans in October 1931. We are one of
-            the most well established and largest legal firms in Zimbabwe,
-            serving major international and Zimbabwean corporate clients
-            as well as a wide range of smaller businesses and individual.
+            B. Chipadza Law Chambers is a dedicated and dynamic legal practice committed to delivering comprehensive, strategic, and reliable legal solutions. We serve a diverse clientele ranging from corporate entities and commercial enterprises to individuals, offering expert guidance with unwavering integrity, professionalism, and a strong focus on client success.
         </>,
     },
     aboutInfo: [
         {
             subtitle: 'About Us',
-            title: 'A Law firm you can trust',
+            title: 'Our Mission',
             details: <>
-                The founding partner of the firm, William Erskine Gill,
-                commenced practice in 1912 and the firm became known as
-                Gill, Godlonton & Gerrans in October 1931. We are one of
-                the most well established and largest legal firms in Zimbabwe,
-                serving major international and Zimbabwean corporate clients
-                as well as a wide range of smaller businesses and individual.
+                To provide exceptional, client-focused legal representation with uncompromising integrity, strategic insight, and a relentless commitment to protecting our clients&apos; rights and interests across all matters.
             </>,
-            href: '/about',
+            href: '/about#mission',
             btnName: 'About Us',
-        }
+            image: ImagesData.other[0],
+        },
+        {
+            subtitle: 'About Us',
+            title: 'Our Vision',
+            details: <>
+                To be a premier, forward-thinking law firm recognized for legal excellence, innovative advocacy, and trusted counsel, setting the benchmark for professional service delivery in the legal industry.
+            </>,
+            href: '/about#vision',
+            btnName: 'About Us',
+            image: ImagesData.other[1]
+        },
+        {
+            subtitle: 'About Us',
+            title: 'Our Values',
+            details: <>
+                Guided by a foundation of professional integrity, client dedication, meticulous attention to detail, and a commitment to delivering strategic, results-driven legal solutions.
+            </>,
+            href: '/about#vision',
+            btnName: 'About Us',
+            image: ImagesData.other[2]
+        },
     ]
 
 }

@@ -48,6 +48,7 @@ export default function ServiceSection({ name }: Props) {
                             >
                                 <Card
                                     name={i.name}
+                                    image={i.image}
                                     href={`/service/${i.id}`} />
                             </motion.div>
                         ))}

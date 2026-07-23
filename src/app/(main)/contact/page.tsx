@@ -3,6 +3,7 @@ import Header2 from "@/_components/headers/Header2"
 import ContactSection from "@/_components/sections/ContactSection"
 import Spacer from "@/_components/spacers/Spacer"
 import TitleNormal from "@/_components/titles/TitleNormal"
+import { ImagesData } from "@/_data/sample/ImagesData"
 import { appInfoViewAction } from "@/app/admin/_data/actions/AppInfoActions"
 import { Metadata } from "next"
 
@@ -43,7 +44,7 @@ export default async function page() {
     const [appData] = await Promise.all([appInfoViewAction()])
     return (
         <>
-            <Header2 name='Contact Us' />
+            <Header2 name='Contact Us' image={ImagesData.header[2]} />
             <BreadCrumb data={CrumbsData} />
 
             <Spacer />

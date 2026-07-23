@@ -48,6 +48,7 @@ export default function NewsGridSection({ name }: Props) {
                             >
                                 <Card
                                     name={i.title}
+                                    image={i.image}
                                     href={`/news/${i.id}`} />
                             </motion.div>
                         ))}
