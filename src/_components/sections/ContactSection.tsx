@@ -61,17 +61,17 @@ export default function ContactSection({ dbData }: Props) {
                             </p>
                             {data?.phone &&
                                 <CardIcon
-                                    name={data.phone}
+                                    name={data?.phone}
                                     iconType='phone' />
                             }
                             {data?.email &&
                                 <CardIcon
-                                    name={data.email}
+                                    name={data?.email}
                                     iconType='email' />
                             }
                             {data?.address &&
                                 <CardIcon
-                                    name={AppInfoData.address}
+                                    name={data?.address}
                                     iconType='address' />
                             }
                         </div>

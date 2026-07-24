@@ -9,6 +9,7 @@ import ContactSection from '@/_components/sections/ContactSection'
 import NewsViewSection from '@/_components/sections/NewsViewSection'
 import Spacer from '@/_components/spacers/Spacer'
 import TitleNormal from '@/_components/titles/TitleNormal'
+import { ImagesData } from '@/_data/sample/ImagesData'
 import { NewsData } from '@/_data/sample/NewsData'
 import { NoImageData } from '@/_data/sample/NoImage'
 import { ServiceData } from '@/_data/sample/ServiceData'
@@ -65,7 +66,9 @@ export default async function page({ params }: Props) {
 
     return (
         <>
-            <Header2 name={TrimString(data?.title ?? 'View Service', 30)} />
+            <Header2
+                name={TrimString(data?.title ?? 'View Service', 30)}
+                image={ImagesData.header[2]} />
             <BreadCrumb data={CrumbsData} />
 
             <Spacer />

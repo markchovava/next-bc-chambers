@@ -4,9 +4,11 @@ import ContactSection from '@/_components/sections/ContactSection'
 import Spacer from '@/_components/spacers/Spacer'
 import TitleNormal from '@/_components/titles/TitleNormal'
 import { ImagesData } from '@/_data/sample/ImagesData'
+import { NoImageData } from '@/_data/sample/NoImage'
 import { ServiceData } from '@/_data/sample/ServiceData'
 import { appInfoViewAction } from '@/app/admin/_data/actions/AppInfoActions'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 
 
@@ -66,7 +68,12 @@ export default async function page({ params }: Props) {
                     <TitleNormal name={data?.name ?? ''} />
                     <div className='grid grid-cols-2 gap-8'>
                         <div className='bg-gray-300 h-100 rounded-lg'>
-
+                            <Image
+                                height={564}
+                                width={720}
+                                src={data?.image ?? NoImageData}
+                                alt='Image'
+                                className='w-full transition__effect h-full object-cover group-hover:scale-110' />
                         </div>
                         <div className='flex flex-col justify-center'>
                             <h3 className='font-serif text-2xl'>What we do</h3>

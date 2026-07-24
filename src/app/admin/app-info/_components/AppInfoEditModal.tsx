@@ -77,7 +77,7 @@ export default function AppInfoEditModal() {
         formData.append('facebook', data.facebook ?? '');
         formData.append('instagram', data.instagram ?? '');
         formData.append('tiktok', data.tiktok ?? '');
-        formData.append('linkedin', data.linkedin);
+        formData.append('linkedin', data.linkedin ?? '');
         formData.append('twitter', data.twitter ?? '');
         if (data.imageUpload) {
             formData.append('image', data.imageUpload)
@@ -128,7 +128,7 @@ export default function AppInfoEditModal() {
                                 <SpacerPrimary />
                                 <hr className="w-full border-b border-gray-100" />
                                 <SpacerPrimary />
-                                <div className='w-[30%]'>
+                                {/*  <div className='w-[30%]'>
                                     <ImageInputDefault
                                         label='Image'
                                         name='name'
@@ -138,7 +138,7 @@ export default function AppInfoEditModal() {
                                     />
 
                                 </div>
-                                <SpacerPrimary />
+                                <SpacerPrimary /> */}
 
                                 <TextInputDefault
                                     label='Name'

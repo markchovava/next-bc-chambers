@@ -2,7 +2,7 @@ export const NavData = [
     { id: 1, name: 'Home', href: '/', isActive: false },
     { id: 2, name: 'About Us', href: '/about', isActive: false },
     { id: 3, name: 'Our Services', href: '/service', isActive: false },
-    { id: 5, name: 'News', href: '/news', isActive: false },
+    /* { id: 5, name: 'News', href: '/news', isActive: false }, */
     { id: 4, name: 'Contact Us', href: '/contact', isActive: false },
 ]
 

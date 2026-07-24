@@ -17,7 +17,7 @@ export const ServiceData = {
     list: [
         {
             id: 12,
-            image: ImagesData.other[0],
+            image: '/assets/images/service/arbitration.jpg',
             name: 'Arbitration',
             iconType: 'Gavel',
             details: (
@@ -31,7 +31,7 @@ export const ServiceData = {
         },
         {
             id: 1,
-            image: ImagesData.other[1],
+            image: '/assets/images/service/commercial.jpg',
             name: 'Commercial and Corporate Law',
             iconType: 'Briefcase',
             details: (
@@ -45,7 +45,7 @@ export const ServiceData = {
         },
         {
             id: 2,
-            image: ImagesData.other[2],
+            image: '/assets/images/service/conveyancing.jpg',
             name: 'Conveyancing and Notarial Practice',
             iconType: 'Home',
             details: (
@@ -59,7 +59,7 @@ export const ServiceData = {
         },
         {
             id: 3,
-            image: ImagesData.other[3],
+            image: '/assets/images/service/criminal.jpg',
             name: 'Criminal Law',
             iconType: 'Scale',
             details: (
@@ -73,7 +73,7 @@ export const ServiceData = {
         },
         {
             id: 4,
-            image: ImagesData.other[4],
+            image: '/assets/images/service/energy.jpg',
             name: 'Energy and Mining',
             iconType: 'Zap',
             details: (
@@ -87,7 +87,7 @@ export const ServiceData = {
         },
         {
             id: 5,
-            image: ImagesData.other[5],
+            image: '/assets/images/service/estate_planning.jpg',
             name: 'Estate Planning, Wills and Successions',
             iconType: 'FileText',
             details: (
@@ -101,7 +101,7 @@ export const ServiceData = {
         },
         {
             id: 6,
-            image: ImagesData.other[6],
+            image: '/assets/images/service/civil.jpg',
             name: 'General Civil Litigation',
             iconType: 'Shield',
             details: (
@@ -115,7 +115,7 @@ export const ServiceData = {
         },
         {
             id: 7,
-            image: ImagesData.other[7],
+            image: '/assets/images/service/insurance.jpg',
             name: 'Insurance Law',
             iconType: 'FileCheck',
             details: (
@@ -129,7 +129,7 @@ export const ServiceData = {
         },
         {
             id: 8,
-            image: ImagesData.other[8],
+            image: '/assets/images/service/intellectual.jpg',
             name: 'Intellectual Property',
             iconType: 'Lightbulb',
             details: (
@@ -143,7 +143,7 @@ export const ServiceData = {
         },
         {
             id: 9,
-            image: ImagesData.other[4],
+            image: '/assets/images/service/labour.jpg',
             name: 'Labour Law',
             iconType: 'Users',
             details: (
@@ -157,7 +157,7 @@ export const ServiceData = {
         },
         {
             id: 10,
-            image: ImagesData.other[0],
+            image: '/assets/images/service/business_rescue.jpg',
             name: 'Business Rescue and Insolvency',
             iconType: 'TrendingDown',
             details: (
@@ -171,7 +171,7 @@ export const ServiceData = {
         },
         {
             id: 11,
-            image: ImagesData.other[1],
+            image: '/assets/images/service/tax.jpg',
             name: 'Tax Advice and Litigation',
             iconType: 'DollarSign',
             details: (

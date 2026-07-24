@@ -79,11 +79,11 @@ export default async function Page() {
         <Spacer />
       </section>
 
-      <section className="bg-gray-50">
+      {/* <section className="bg-gray-50">
         <Spacer />
         <NewsSection name='Our News & Bulletins' />
         <Spacer />
-      </section>
+      </section> */}
 
       <Spacer />
       <ContactSection dbData={appData} />
